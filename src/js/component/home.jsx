@@ -5,7 +5,6 @@ import "../../styles/card.css";
 
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
-
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
