@@ -6,8 +6,8 @@ import "../../styles/card.css";
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
 //create your first component
 const Home = () => {
@@ -26,13 +26,19 @@ const Home = () => {
 		"Proin luctus consequat sapien scelerisque viverra. Quisque et laoreet odio. Vivamus dapibus, urna a finibus faucibus, ligula leo consectetur est, in faucibus leo mi quis tellus.";
 
 	return (
-		<div className="container row">
-			<Jumbotron />
-			<Card title={cardTitle1} message={cardMessage1} />
-			<Card title={cardTitle2} message={cardMessage2} />
-			<Card title={cardTitle3} message={cardMessage3} />
-			<Card title={cardTitle4} message={cardMessage4} />
-		</div>
+		<>
+			<Navbar />
+
+			<div className="container row">
+				<Jumbotron />
+				<Card title={cardTitle1} message={cardMessage1} />
+				<Card title={cardTitle2} message={cardMessage2} />
+				<Card title={cardTitle3} message={cardMessage3} />
+				<Card title={cardTitle4} message={cardMessage4} />
+			</div>
+
+			<Footer />
+		</>
 	);
 };
 
